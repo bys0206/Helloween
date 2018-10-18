@@ -1,0 +1,245 @@
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+}
+
+div{
+	height: 100%;
+}
+
+/*		选择器 
+     	类选择器
+ 		id选择器*/
+
+
+/*第一页*/
+#p1{
+	background-image: url(../img/halloween1.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	/*display: none;*/
+}
+#title{
+	position: fixed;
+	top: 75px;
+	left: 325px;
+	animation: mymove01 2s;
+}
+@keyframes mymove01{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+#box{
+	position: fixed;
+	bottom: 300px;
+	left: 300px;
+	animation: mymove02 3s infinite;
+}
+@keyframes mymove02{
+	0%{
+		left: 260px;
+	}
+	50%{
+		left: 315px;
+	}
+	100%{
+		left: 260px;
+	}
+}
+
+/*第二页*/
+#p2{
+	background-image: url(../img/halloween2.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display: none;
+}
+#pumpkin{
+	position: fixed;
+	left: 275px;
+	top: 50px;
+}
+#startGame{
+	position: fixed;
+	left: 375px;
+	bottom: 275px;
+}
+
+/*第三页*/
+#p3{
+	background-image: url(../img/halloweenMain.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display: none;
+}
+#charm01{
+	position: fixed;
+	left: 50px;
+	top: 100px;
+	animation: move01 4s infinite;
+}
+@keyframes move01{
+	0%{
+		left: 50px;
+		top: 100px;
+	}
+	33%{
+		left: 50px;
+		top: 200px;
+	}
+	66%{
+		left: 100px;
+		top: 150px;
+	}
+	100%{
+		left: 50px;
+		top: 100px;
+	}
+}
+#charm02{
+	position: fixed;
+	left: 250px;
+	top: 400px;
+	animation: move02 5s infinite;
+}
+@keyframes move02{
+	0%{
+		left: 250px;
+		top: 400px;
+	}
+	33%{
+		left: 300px;
+		top: 450px;
+	}
+	66%{
+		left: 350px;
+		top:450px ;
+	}
+	100%{
+		left: 250px;
+		top: 400px;
+	}
+}
+#charm03{
+	position: fixed;
+	left: 50px;
+	top: 650px;
+	animation: move03 10s infinite;
+}
+@keyframes move03{
+	0%{
+		left: 50px;
+		top: 650px;
+	}
+	50%{
+		left: 400px;
+		top: 700px;
+	}
+	100%{
+		left: 50px;
+		top: 650px;
+	}
+}
+#charm04{
+	position: fixed;
+	left: 500px;
+	top: 50px;
+	animation: move04 15s infinite;
+}
+@keyframes move04{
+	0%{
+		left: 500px;
+		top: 50px;
+	}
+	25%{
+		left: 700px;
+		top: 100px;
+	}
+	50%{
+		left: 700px;
+		top: 650px;
+	}
+	75%{
+		left: 700px;
+		top: 100px;
+	}
+	100%{
+		left: 500px;
+		top: 50px;
+	}
+}
+#charm05{
+	position: fixed;
+	left: 400px;
+	top: 900px;
+	animation: move05 11s infinite;
+}
+@keyframes move05{
+	0%{
+		left: 400px;
+		top: 900px;
+	}
+	50%{
+		left: 400px;
+		top: 1000px;
+	}
+	100%{
+		left: 400px;
+		top: 900px;
+	}
+}
+#charm06{
+	position: fixed;
+	left: 250px;
+	top: 850px;
+	animation: move06 8s infinite;
+}
+@keyframes move06{
+	0%{
+		left: 250px;
+		top: 850px;
+	}
+	50%{
+		left: 250px;
+		top: 1250px;
+	}
+	100%{
+		left: 250px;
+		top: 850px;
+	}
+}
+#charm07{
+	position: fixed;
+	right: 80px;
+	bottom: 300px;
+	animation: move07 6s infinite;
+}
+@keyframes move07{
+	0%{
+		width:100px;
+		height:100px;
+	}
+	50% 
+		{width:20px;
+		height:20px;
+	}
+	100%{
+		width: 100px;
+		height: 100px;
+	}
+}
+
+/*第四页*/
+#p4{
+	/*    ../代表上级目录   */
+	background-image: url(../img/charm1.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display: none;
+}

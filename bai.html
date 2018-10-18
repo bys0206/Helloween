@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>万圣节抽符</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript">
+			function showp(num){
+				document.getElementById("p1").style.display="none";
+				document.getElementById("p2").style.display="none";
+				document.getElementById("p3").style.display="none";
+				document.getElementById("p4").style.display="none";
+			if(num==2){
+				document.getElementById("p2").style.display="block";
+			}else if(num==3){
+				document.getElementById("p3").style.display="block";
+			}else if(num==4){
+				document.getElementById("p4").style.display="block";
+			}
+			}
+			function showcharm(num){
+				//1.隐藏第三页，显示第四页，根据num换背景图
+				document.getElementById("p3").style.display="none";
+				document.getElementById("p4").style.display="block";
+				if(num==1){
+					//js操作css文件 backgroung-image --->backgroundImage
+					document.getElementById("p4").style.backgroundImage="url(img/charm1.jpg)"
+				}else if(num==2){
+					document.getElementById("p4").style.backgroundImage="url(img/charm2.jpg)"
+				}else if(num==3){
+					document.getElementById("p4").style.backgroundImage="url(img/charm3.jpg)"
+				}else if(num==4){
+					document.getElementById("p4").style.backgroundImage="url(img/charm4.jpg)"
+				}else if(num==5){
+					document.getElementById("p4").style.backgroundImage="url(img/charm5.jpg)"
+				}else if(num==6){
+					document.getElementById("p4").style.backgroundImage="url(img/charm6.jpg)"
+				}else if(num==7){
+					document.getElementById("p4").style.backgroundImage="url(img/charm7.jpg)"
+				}
+			}
+		
+		</script>
+	</head>
+	<body>
+		<!--hello world!<br />
+		hello China!<br />
+		<img src="img/box.png" />
+		<img src="img/title.png" /><br />-->
+		<audio src="audio/AKB48.mp3" autoplay="autoplay"></audio>
+		<div id="p1">
+			<img id="title" src="img/title.png"/>
+			<img id="box" src="img/box.png" onclick="showp(2);"/>
+		</div>
+		<div id="p2">
+			<img id="pumpkin" src="img/pumpkin.png" />
+			<img id="startGame" src="img/startGame.jpg" onclick="showp(3);"/>
+		</div>
+		<div id="p3">
+			<img id="charm01" src="img/1.png" onclick="showcharm(1);"/>
+			<img id="charm02" src="img/2.png" onclick="showcharm(2);"/>
+			<img id="charm03" src="img/3.png" onclick="showcharm(3);"/>
+			<img id="charm04" src="img/4.png" onclick="showcharm(4);"/>
+			<img id="charm05" src="img/5.png" onclick="showcharm(5);"/>
+			<img id="charm06" src="img/6.png" onclick="showcharm(6);"/>
+			<img id="charm07" src="img/7.png" onclick="showcharm(7);"/>
+		</div>
+		<div id="p4">
+			<img src="img/back.png" onclick="showp(3);" />
+		</div>
+	
+	</body>
+</html>
+
+
+
+
+
+
+
